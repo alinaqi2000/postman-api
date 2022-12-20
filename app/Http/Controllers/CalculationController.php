@@ -10,7 +10,7 @@ class CalculationController extends BaseController
     public function index(Request $request)
     {
 
-        return $this->returnResponse(true, [], 200);
+        return $this->returnResponse(true, $request->all(), 200);
 
     }
     public function calculate_mean(Request $request)
